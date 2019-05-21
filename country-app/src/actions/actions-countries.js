@@ -11,17 +11,12 @@ export function getCountries() {
     })
 }
 
-getCountries();
-
-
 export function deleteCountry(id) {
     return {
         type: DELETE_COUNTRY,
         id
     };
 }
-
-deleteCountry(id);
 
 export function getCountry(id) {
     return {
@@ -30,8 +25,6 @@ export function getCountry(id) {
     }
 }
 
-getCountry(id);
-
 export function searchCountries(searchText) {
     return {
         type: SEARCH_COUNTRIES,
@@ -39,13 +32,9 @@ export function searchCountries(searchText) {
     }
 }
 
-searchCountries(searchText);
-
 export function setContinent(name) {
     return {
         type: SET_CONTINENT,
         name
     }
 }
-
-setContinent(name);
